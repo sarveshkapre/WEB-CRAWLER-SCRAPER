@@ -11,11 +11,9 @@ PREREQUIITES
 
 HIGH LEVEL APPROACH
 
-1. Started by understanding how HTTP works! 
-2. Analyzed the request response message using Burp Suite to get familiar with the format. 
-3. Wrote a simple python code to perform form authentication using lxml and requests module. 
-4. Wrote another python program to scrape a website to collect URL's just to get familiar with web scrapping. 
-5. Used beautiful soup, lxml.html and requests module. Combined both the programs to login and scrape and tested on website. 
+1. Requests library to handle HTTP request and response, handle HTTP response headers and maintain authenticated session for each request.
+2. lxml.html to extract hidden parameters like "CSRFMIDDLEWARETOKEN" and "/next".
+3. BeautifulSoup to extract URI's and Secret Flags.
 
 CHALLENGES
 

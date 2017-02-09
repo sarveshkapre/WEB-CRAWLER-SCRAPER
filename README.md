@@ -2,13 +2,15 @@
 This assignment is intended to familiarize myself with the HTTP protocol. HTTP is (arguably) the most important application level protocol on the Internet today: the Web runs on HTTP, and increasingly other applications use HTTP as well (including Bittorrent, streaming video, Facebook and Twitter's social APIs, etc.). My goal in this assignment is to implement a web crawler that gathers data from a website. ( For this project, I have crawled a fake social networking site set up by my university for this project)
 
 HIGH LEVEL APPROACH
-Started by understanding how HTTP works! 
-Analyzed the request response message using Burp Suite to get familiar with the format. 
-Wrote a simple python code to perform form authentication using lxml and requests module. 
-Wrote another python program to scrape a website to collect URL's just to get familiar with web scrapping. 
-Used beautiful soup, lxml.html and requests module. Combined both the programs to login and scrape and tested on website. 
+
+1. Started by understanding how HTTP works! 
+2. Analyzed the request response message using Burp Suite to get familiar with the format. 
+3. Wrote a simple python code to perform form authentication using lxml and requests module. 
+4. Wrote another python program to scrape a website to collect URL's just to get familiar with web scrapping. 
+5. Used beautiful soup, lxml.html and requests module. Combined both the programs to login and scrape and tested on website. 
 
 CHALLENGES
+
 1.  Handle different server response like 200, 301, 403, 403, 500.
 
 1.1  Response 200 - OK - get the URL. pop it from the "urls" list and append it to "visited" list.

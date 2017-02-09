@@ -1,5 +1,13 @@
 # webcrawler
-This assignment is intended to familiarize myself with the HTTP protocol. HTTP is (arguably) the most important application level protocol on the Internet today: the Web runs on HTTP, and increasingly other applications use HTTP as well (including Bittorrent, streaming video, Facebook and Twitter's social APIs, etc.). My goal in this assignment is to implement a web crawler that gathers data from a website. ( For this project, I have crawled a fake social networking site set up by my university for this project)
+PREREQUIITES
+
+1. Software
+  1.1 Python 2.7
+  
+2. Libraries
+  2.1 Requests
+  2.2 lxml.html
+  2.3 BeautifulSoup
 
 HIGH LEVEL APPROACH
 
@@ -29,7 +37,7 @@ CHALLENGES
         Approach was to created a stack/queue  and appended URL's continuously when visited. In order to scrape data from multiple pages         and remember that we have visited we need to create a data structure. Stack here will initially grow to a certain size and then         decrease back to zero. Hence used while loop. Wrote a program to crawl through web pages. Created two lists. One will maintain           the URL's collected and other will keep the URL's visited. After collecting the URL it is checked in visited list, if it is             present, then its dropped. Else it is added to list.
 
   3.2) I also need to track the relevant links to fakebook. Any other links which redirects to northeastern or david choffnes websites need to be dropped.
-        Used an if statement to check if href belong with the particular domain. Only then visit them and add to visited list.
+        Used  "if" statement to check if href belong with the particular domain. Only then visit them and add to visited list.
         
   3.3) Need to identify the end of program execution. To do this I need to keep tracks of the flags extracted during crawling and scraping. Once, I get 5 flags, I can stop immediately.
         Used for loop and set value of variable i to 1. It will increase by 1 as flags get displayed. When 5 flags are visited the loop         breaks and the program terminates

@@ -40,8 +40,3 @@ OVERVIEW OF TESTING CODE
 
         Wrote basic problems for each task like scraping and crawling and authenticating. Then combined the code.
         Printed statement for each important activity so as to test the logic. Tested for error handling using invalid input.
-
-
-
-
-

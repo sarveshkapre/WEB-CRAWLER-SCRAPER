@@ -1,6 +1,7 @@
 # webcrawler
-PREREQUIITES
-
+----------------
+| PREREQUIITES |
+----------------
 1. Software
   1.1 Python 2.7
   
@@ -8,14 +9,18 @@ PREREQUIITES
   2.1 Requests
   2.2 lxml.html
   2.3 BeautifulSoup
-
-HIGH LEVEL APPROACH
-
+  
+-----------------------
+| HIGH LEVEL APPROACH |
+-----------------------
 1. Requests library to handle HTTP request and response, handle HTTP response headers and maintain authenticated session for each request.
 2. lxml.html to extract hidden parameters like "CSRFMIDDLEWARETOKEN" and "/next".
 3. BeautifulSoup to extract URI's and Secret Flags.
 
-CHALLENGES
+
+--------------
+| CHALLENGES |
+--------------
 
 1.  Handle different server response like 200, 301, 403, 403, 500.
 
@@ -42,7 +47,8 @@ CHALLENGES
 
 4. Faced several problems passing CSRF Token by extracting it from hidden fields each time we send a get request.
 
-OVERVIEW OF TESTING CODE
-
+----------------------------
+| OVERVIEW OF TESTING CODE |
+----------------------------
         Wrote basic problems for each task like scraping and crawling and authenticating. Then combined the code.
         Printed statement for each important activity so as to test the logic. Tested for error handling using invalid input.
